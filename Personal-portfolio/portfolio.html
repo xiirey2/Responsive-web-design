@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<style>
+    body, html {
+    margin: 0;
+    height:100%
+}
+    #navbar {
+        width: 100%;
+        height: 12%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: #B0E0E6;
+        /* blueviolet; */
+        color: #2F4F4F;
+        
+    }
+    nav ul a {
+        text-decoration: none;
+        font-size: 2.2rem;
+        padding: 2rem;
+        
+    }
+    nav li{
+        list-style: none;
+        display: inline-block
+    }
+    nav ul {
+        float: right;
+    }
+    #welcome-section {
+        width: 100%;
+        height: 100%;
+        background-color: #90EE90;
+        /* #E0FFFF; */
+        /* coral; */
+        display: block;
+        margin-top: 5.5%;
+        left: 0;
+        text-align: center;
+        padding-top: 10%;
+        color: #2F4F4F;
+    }
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 4rem;
+        color: #2F4F4F;
+        /* margin-top: 5%; */
+    }
+    #title {
+        font-size: 3rem;
+        font-weight: 200;
+        font-style: italic;
+        color: #0000CD;
+        /* margin-top: 5%; */
+    }
+    #projects {
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: SkyBlue;
+        padding-top: 1%;
+        margin-bottom: 0%;
+    }
+    .project-tile {
+        text-align: center;
+        margin-bottom: 0%;
+    }
+    hr {
+        margin-left: 15%;
+        margin-right: 15%;
+        border: 1px solid #2F4F4F;
+    }
+
+    .image {
+        width: 90%;
+        height: 400px; 
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+ 
+    #projects_div {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 0px;
+        align-items:center;
+
+    }
+    .project {
+        margin-top: 20px;
+    }
+
+    .project-link-div {
+        display: block;
+        background-color: darkslategray;
+        width: 90%;
+        height: 50px;
+        align-items: center;
+        margin-left: 15px;
+        margin-top: -5px;
+    }
+    .project-submit {
+        margin-top: 10px;
+        margin-left: 100px;
+        width: 200px;
+        height: 30px;
+        
+    }
+
+</style>
+
+<html>
+
+<head>
+    <title>
+        Personal Portfolio
+    </title>
+</head>
+
+<body>
+    <section id="welcome-section">
+        <h1>
+            Hey I am Abdirahman
+        </h1>
+        <p id="title">a web developer</p>
+    </section>
+    <section id="projects">
+        <h1 class="project-tile">These are some of my projects</h1>
+        <hr>
+        <div id="projects_div">
+            <div class="project" id="tribute">
+                    <img class="image" src="images/tribute.jpg" alt="">
+                    <div class="project-link-div">
+                        <form action="https://codepen.io/freeCodeCamp/full/zNqgVx" target="0">
+                            <input class="project-submit" type="submit" id="tribute-submit" value=" Tribute Page ">
+                        </form>
+                    </div>
+            </div>
+            <div class="project" id="quote">
+                    <img class="image" src="images/random-quote-machine.png" alt="">
+                    <div class="project-link-div">
+                        <form action="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="0">
+                            <input class="project-submit" type="submit" id="quote-submit" value="Random Quote Machine">
+                        </form>
+                    </div>
+            </div>
+            <div class="project" id="calc">
+                    <img class="image" src="images/calc.png" alt="">
+                    <div class="project-link-div">
+                        <form action="https://codepen.io/freeCodeCamp/full/wgGVVX" target="0">
+                            <input class="project-submit" type="submit" id="calc-submit" value="Javascript Calculator">
+                        </form>
+                    </div>
+            </div>
+            <div class="project" id="map">
+                    <img class="image" src="images/map.jpg" alt="">
+                    <div class="project-link-div">
+                        <form action="https://codepen.io/freeCodeCamp/full/mVEJag" target="0">
+                            <input class="project-submit" type="submit" id="map-submit" value="Map Data Accross the Globe">
+                        </form>
+                    </div>
+            </div>
+            <div class="project" id="wiki">
+                    <img class="image" src="images/wiki.png" alt="">
+                    <div class="project-link-div">
+                        <form action="https://codepen.io/freeCodeCamp/full/wGqEga" target="0">
+                            <input class="project-submit" type="submit" id="wiki-submit" value="Wikipedie Viewer">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="project" id="tictac">
+                        <img class="image" src="images/tic-tac-toe.png" alt="">
+                        <div class="project-link-div">
+                            <form action="https://codepen.io/freeCodeCamp/full/wGqEga" target="0">
+                                <input class="project-submit" type="submit" id="tictak-submit" value="Tic Tac Toe Game">
+                            </form>
+                        </div>
+                    </div>
+            
+        </div>
+
+    </section>
+    <nav id="navbar">
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
